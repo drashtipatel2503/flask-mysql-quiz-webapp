@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create Profile</title>
+
+  
+  <meta charset="utf-8">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.0.1/tailwind.min.css'>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+  integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet"/>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link type="stylesheets" href="{{ url_for('static', filename='styles.css')}}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='jquery-3.4.1.min.js')}}"></script>
+  <link type="stylesheet" href="{{ url_for('static', filename='styles.css')}}"></link>
+  <link type="stylesheets" href="static/styles.css"></link>
+</head>
+<style>
+  #body{
+    background-color: lightcyan;
+  }
+  button a{
+    color:white;
+  }
+  button a:hover{
+    color:yellowgreen;
+  }
+  .container{
+      padding:2%;
+      text-align: center;
+      justify-content: center;
+  }
+</style>
+<body id="body">
+
+
+<div class="container">
+
+
+  <div class="intro">
+    <div class= "row welcome" style="margin-top:5em;">
+      <h1>Welcome to quiz Masters</h1>
+    </div>
+    <div class="row organize">
+      <div class="col-12 col-sm-6">
+      <button class="btn btn-primary"><a href=createroom>Organize a quiz</a></button>
+    </div>
+    <div class="col-12 col-sm-6">
+      <button class="btn btn-primary"><a href="register">Participate</button>
+    </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create Profile</title>
+
+  
+  <meta charset="utf-8">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.0.1/tailwind.min.css'>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+  integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet"/>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link type="stylesheets" href="{{ url_for('static', filename='styles.css')}}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='jquery-3.4.1.min.js')}}"></script>
+  <link type="stylesheet" href="{{ url_for('static', filename='styles.css')}}"></link>
+  <link type="stylesheets" href="static/styles.css"></link>
+</head>
+<style>
+  #body{
+    background-color: lightcyan;
+  }
+  .container{
+      padding:2%;
+  }
+  button a{
+    color:white;
+  }
+  button a:hover{
+    color:yellowgreen;
+  }
+  .row{
+      border: 1px solid green;
+  }
+  h1{
+      color:purple
+  }
+</style>
+<body id="body">
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-sm-8">
+            <h1>Participants</h1>
+        </div>
+        <div class="col-12 col-sm">
+            <h1>Scores</h1>
+        </div>
+    </div>
+
+
+
+
+    {% for i in range(0,l) %}
+<div class="row" >
+    <div class="col-12 col-sm-8">
+        {{data[i][1]}}
+    </div>
+    <div class="col-12 col-sm">
+        {{data[i][2]}}
+    </div>
+</div>
+
+    {% endfor %}
+
+</div>
+</body>
+</html>
